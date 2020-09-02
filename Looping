@@ -1,0 +1,28 @@
+function vowelsAndConsonants(s) {
+    var vowel = ""
+    var consonant = ""
+    var i;
+    for(i=0; i < s.length; i++){
+        if(s.charAt(i) == "a" || s.charAt(i) == "e" || s.charAt(i) == "i" || s.charAt(i) == "o" || s.charAt(i) == "u"){
+            vowel += s.charAt(i)
+        }else if(s.charAt(i) != "a" || s.charAt(i) != "e" || s.charAt(i) != "i" || s.charAt(i) != "o" || s.charAt(i) != "u"){
+            consonant += s.charAt(i)
+        }
+      }
+ i = 0;
+ for(i in vowel){
+     console.log(vowel.charAt(i))
+ }
+ for(i in consonant){
+     console.log(consonant.charAt(i))
+ }
+        }
+  
+
+
+
+function main() {
+    const s = readLine();
+    
+    vowelsAndConsonants(s);
+}
